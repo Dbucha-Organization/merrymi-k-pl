@@ -53,6 +53,10 @@ img {
     z-index: 2000;
 }
 
+.warning-banner.active{
+    display: none;
+}
+
 .warning-content {
     max-width: 800px;
     margin: 0 auto;

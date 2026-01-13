@@ -4,11 +4,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
+    const warnDiv = document.querySelector('.warning-banner');
 
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', function () {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            warnDiv.classList.toggle('active');
         });
 
         // Close menu when clicking on a link
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             link.addEventListener('click', function () {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                warnDiv.classList.remove('active');
             });
         });
 
@@ -28,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!isClickInsideNav && !isClickOnHamburger && navMenu.classList.contains('active')) {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                warnDiv.classList.remove('active');
             }
         });
     }
