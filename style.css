@@ -47,10 +47,10 @@ img {
 .warning-banner {
     width: 100%;
     background: #000;
-    /* padding: 1rem 2rem; */
+    /* color: var(--color-text-dark); */
+    padding: 1px 0;
     position: relative;
     z-index: 2000;
-    /* box-shadow: 0 4px 12px rgba(204, 0, 0, 0.3); */
 }
 
 .warning-content {
@@ -64,7 +64,7 @@ img {
 
 .warning-banner p {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
     color: #ffffff;
     margin: 0;
     letter-spacing: 0.5px;
@@ -107,7 +107,7 @@ img {
 .navbar {
     background-color: var(--color-primary);
     padding: 15px 0;
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -248,7 +248,7 @@ img {
 .hero {
     position: relative;
     min-height: 100vh;
-    padding: 120px 0 80px;
+    padding: 40px 0 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4128,4 +4128,15 @@ footer svg {
         margin-bottom: 18px;
         padding: 8px;
     }
+}
+
+/* User Requested Updates for Testimonials */
+.testimonial-rating .star {
+    color: #ffc107;
+    /* Yellow */
+}
+
+.author-name {
+    color: #ffffff;
+    /* White */
 }
