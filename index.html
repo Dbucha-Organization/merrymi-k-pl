@@ -13,6 +13,360 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" sizes="48x48" href="favico.ico">
+    <!-- TODO: Add Product Offer price, priceCurrency and availability only after real product prices and stock status are present on the page. -->
+    <!-- TODO: Add FAQPage JSON-LD only after a visible FAQ block is added to this page. -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "OnlineStore",
+                    "@id": "https://merrymi-k.pl/#organization",
+                    "name": "MerryMi",
+                    "url": "https://merrymi-k.pl/",
+                    "logo": "https://merrymi-k.pl/images/logo.png",
+                    "image": "https://merrymi-k.pl/images/logo.png",
+                    "description": "MerryMi w Polsce - sklep z produktami typu jednorazówki i e papierosy jednorazowe.",
+                    "email": "info@dbucha.com",
+                    "telephone": "+48573581194",
+                    "contactPoint": [
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+48573581194",
+                            "email": "info@dbucha.com",
+                            "contactType": "customer service",
+                            "areaServed": "PL",
+                            "availableLanguage": [
+                                "pl"
+                            ]
+                        }
+                    ],
+                    "sameAs": [
+                        "https://www.instagram.com/dbucha.com_sklep/",
+                        "https://www.facebook.com/profile.php?id=61578129732195",
+                        "https://www.tiktok.com/@dbucha.com"
+                    ],
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "Polska"
+                    },
+                    "availableLanguage": [
+                        "pl"
+                    ],
+                    "review": [
+                        {
+                            "@type": "Review",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Paulina M."
+                            },
+                            "reviewBody": "Jestem matką dwójki dzieci i każda złotówka ma znaczenie. Długo porównywałam ceny w internecie i muszę przyznać, że Wasza oferta była bezkonkurencyjna. To naprawdę się opłaca! Zakup jest naprawdę satysfakcjonujący, bo nie czuję, że przepłaciłam. Gorąco polecam wszystkim, którzy szukają oszczędności bez utraty jakości.",
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "5",
+                                "bestRating": "5",
+                                "worstRating": "1"
+                            }
+                        },
+                        {
+                            "@type": "Review",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Maria J."
+                            },
+                            "reviewBody": "Mega jakość, a przesyłka bardzo sprawna. Zadowolona!",
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "5",
+                                "bestRating": "5",
+                                "worstRating": "1"
+                            }
+                        },
+                        {
+                            "@type": "Review",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Monika W."
+                            },
+                            "reviewBody": "Cena rewelacyjna! Jestem bardzo zadowolona, że udało mi się zaoszczędzić. Jakość też w porządku, super sprawa. Polecam!",
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "5",
+                                "bestRating": "5",
+                                "worstRating": "1"
+                            }
+                        },
+                        {
+                            "@type": "Review",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Kamila C."
+                            },
+                            "reviewBody": "Zamówienie miałam u siebie w 4 dni. Super szybka realizacja i świetny wybór dostawcy. Zdecydowanie polecam!",
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": "5",
+                                "bestRating": "5",
+                                "worstRating": "1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://merrymi-k.pl/#website",
+                    "name": "MerryMi",
+                    "url": "https://merrymi-k.pl/",
+                    "publisher": {
+                        "@id": "https://merrymi-k.pl/#organization"
+                    },
+                    "inLanguage": "pl"
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://merrymi-k.pl/#breadcrumb",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Strona Główna",
+                            "item": "https://merrymi-k.pl/"
+                        }
+                    ]
+                },
+                {
+                    "@type": "CollectionPage",
+                    "@id": "https://merrymi-k.pl/#collection-page",
+                    "name": "Jednorazówki i e papierosy jednorazowe MerryMi",
+                    "url": "https://merrymi-k.pl/#products",
+                    "description": "Lista produktów typu e papieros jednorazowy dostępnych w ofercie MerryMi.",
+                    "isPartOf": {
+                        "@id": "https://merrymi-k.pl/#website"
+                    },
+                    "breadcrumb": {
+                        "@id": "https://merrymi-k.pl/#breadcrumb"
+                    },
+                    "mainEntity": {
+                        "@id": "https://merrymi-k.pl/#featured-products"
+                    },
+                    "inLanguage": "pl"
+                },
+                {
+                    "@type": "ItemList",
+                    "@id": "https://merrymi-k.pl/#featured-products",
+                    "name": "Polecane jednorazówki MerryMi",
+                    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+                    "numberOfItems": 12,
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/merrymi-blade-30k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi Blade 30K 5%",
+                                "url": "https://www.dbucha.com/products/merrymi-blade-30k-buchow",
+                                "image": "https://merrymi-k.pl/images/Merry_Mi_Blade_30K_Polska_Jednorazówki_E_papieros_Dragon_Fruit_Ice.jpg",
+                                "description": "MerryMi Blade 30K 5% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/merrymi-wiflux-24k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi WiFlux 24K 5%",
+                                "url": "https://www.dbucha.com/products/merrymi-wiflux-24k-buchow",
+                                "image": "https://merrymi-k.pl/images/Merry_Mi_Blade_30K_Polska_Jednorazówki_E_papieros_Strawberry_cherry.jpg",
+                                "description": "MerryMi WiFlux 24K 5% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/merrymi-m-mecha-16k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi Mecha 16K 3%",
+                                "url": "https://www.dbucha.com/products/merrymi-m-mecha-16k-buchow",
+                                "image": "https://merrymi-k.pl/images/Merry_Mi_Mecha_16K_Polska_Jednorazówki_E_papieros_Dragon_Fruit_Ice.jpg",
+                                "description": "MerryMi Mecha 16K 3% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/merrymi-mk20000-20k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi MK20K 5%",
+                                "url": "https://www.dbucha.com/products/merrymi-mk20000-20k-buchow",
+                                "image": "https://merrymi-k.pl/images/Merry_Mi_MK20K_Polska_Jednorazówki_E_papieros_Lime_Mojito_20000.jpg",
+                                "description": "MerryMi MK20K 5% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 5,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-x-40k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi Panda 40K 5%",
+                                "url": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-x-40k-buchow",
+                                "image": "https://merrymi-k.pl/images/Merry_Mi_Panda_40K_Polska_Jednorazówki_E_papieros_Frozen_Grape_40000.jpg",
+                                "description": "MerryMi Panda 40K 5% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 6,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/merrymi-mecha-pro-35k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi Mecha Pro 35K 5%",
+                                "url": "https://www.dbucha.com/products/merrymi-mecha-pro-35k-buchow",
+                                "image": "https://merrymi-k.pl/images/Merry_Mi_Mecha_Pro_35K.jpg",
+                                "description": "MerryMi Mecha Pro 35K 5% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 7,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/jednorazowki-merrymi-kitty-20k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi Kitty 20K 3%",
+                                "url": "https://www.dbucha.com/products/jednorazowki-merrymi-kitty-20k-buchow",
+                                "image": "https://merrymi-k.pl/images/MerryMi-Kitty-20K-Jednorazówki-Epapieros.jpg",
+                                "description": "MerryMi Kitty 20K 3% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 8,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/jednorazowki-merrymi-mecha-x-28k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi Mecha X 28 5%",
+                                "url": "https://www.dbucha.com/products/jednorazowki-merrymi-mecha-x-28k-buchow",
+                                "image": "https://merrymi-k.pl/images/merry-mi-mecha-x-28-jednorazówki-epapieros-28000-buchów-grape-ice.png",
+                                "description": "MerryMi Mecha X 28 5% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 9,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-pod-66k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi Panda Pod 66K 5%",
+                                "url": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-pod-66k-buchow",
+                                "image": "https://merrymi-k.pl/images/MerryMi-Panda-Pod-66K-Jednorazówki-epapieros-66000-Buchów-Mixed-Berry-Strawberry-Kiwi.png",
+                                "description": "MerryMi Panda Pod 66K 5% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 10,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-twins-40k-buchow#product",
+                                "name": "E papieros jednorazowy MerryMi Panda Twins 40K 5%",
+                                "url": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-twins-40k-buchow",
+                                "image": "https://merrymi-k.pl/images/MerryMi-Panda-Twins-40K-Jednorazówki-epapieros-40000-Buchów-Blackberry-Cherry-Dragon-Fruit-Ice.png",
+                                "description": "MerryMi Panda Twins 40K 5% - e papieros jednorazowy z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E papieros jednorazowy"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 11,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe#product",
+                                "name": "E-liquid MerryMi Salts 30ml",
+                                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe",
+                                "image": "https://merrymi-k.pl/images/MerryMi-Salts-30ml-E-liquid-Sole-Nikotynowe-Lush-Ice.png",
+                                "description": "MerryMi Salts 30ml - e-liquid, sole nikotynowe do e papierosa z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E-liquid"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 12,
+                            "item": {
+                                "@type": "Product",
+                                "@id": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe#product-forest-berries",
+                                "name": "E-liquid MerryMi Salts 30ml Forest Berries",
+                                "url": "https://www.dbucha.com/products/e-liquid-merrymi-salts-30ml-sole-nikotynowe",
+                                "image": "https://merrymi-k.pl/images/MerryMi-Salts-30ml-E-liquid-Sole-Nikotynowe-Forest-Berries.png",
+                                "description": "MerryMi Salts 30ml Forest Berries - e-liquid, sole nikotynowe do e papierosa z oferty MerryMi.",
+                                "brand": {
+                                    "@type": "Brand",
+                                    "name": "MerryMi"
+                                },
+                                "category": "E-liquid"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
 </head>
 
 <body>
